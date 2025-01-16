@@ -1,6 +1,7 @@
 package com.learn.accounts.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
@@ -8,12 +9,19 @@ import java.time.LocalDateTime;
 
 public class ErrorResponseDto {
 
+    @Schema(description = "API Path", example = "/accounts")
     @JsonProperty("ApiPath")
     private String apiPath;
+
     @JsonProperty("ErrorCode")
+    @Schema(description = "Error Code", example = "200")
     private HttpStatus errorCode;
+
+    @Schema(description = "Error Message", example = "Success")
     @JsonProperty("ErrorMessage")
     private String errorMessage;
+
+    @Schema(description = "Error Date Time", example = "2023-01-01T00:00:00")
     @JsonProperty("ErrorDateTime")
     private LocalDateTime errorDateTime;
 

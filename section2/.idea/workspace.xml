@@ -35,7 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.AccountsApplication.executor": "Run",
+    "Application.AccountsApplication.executor": "Debug",
     "Maven.accounts [build].executor": "Run",
     "Maven.accounts [clean,build].executor": "Run",
     "Maven.accounts [clean,install].executor": "Run",
@@ -105,7 +105,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/accounts/src/main/java/com/learn/accounts/controller/AccountsController.java</url>
-          <line>36</line>
+          <line>49</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

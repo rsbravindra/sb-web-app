@@ -3,10 +3,14 @@ package com.learn.accounts.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 public class ResponseDto {
+    @Schema(description = "Status code for the response", required = true, example = "200")
     @JsonProperty("StatusCode")
     private String statusCode;
+
+    @Schema(description = "Status message for the response", required = true, example = "Success")
     @JsonProperty("StatusMessage")
     private String statusMessage;
     public ResponseDto(String statusCode, String statusMessage) {
