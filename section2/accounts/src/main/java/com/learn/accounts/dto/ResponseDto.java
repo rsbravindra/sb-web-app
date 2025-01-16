@@ -6,11 +6,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 public class ResponseDto {
-    @Schema(description = "Status code for the response", required = true, example = "200")
+    @Schema(description = "Status code for the response")
     @JsonProperty("StatusCode")
     private String statusCode;
 
-    @Schema(description = "Status message for the response", required = true, example = "Success")
+    @Schema(description = "Status message for the response")
     @JsonProperty("StatusMessage")
     private String statusMessage;
     public ResponseDto(String statusCode, String statusMessage) {

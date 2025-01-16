@@ -9,19 +9,19 @@ import java.time.LocalDateTime;
 
 public class ErrorResponseDto {
 
-    @Schema(description = "API Path", example = "/accounts")
+    @Schema(description = "API Path")
     @JsonProperty("ApiPath")
     private String apiPath;
 
     @JsonProperty("ErrorCode")
-    @Schema(description = "Error Code", example = "200")
+    @Schema(description = "Error Code")
     private HttpStatus errorCode;
 
-    @Schema(description = "Error Message", example = "Success")
+    @Schema(description = "Error Message")
     @JsonProperty("ErrorMessage")
     private String errorMessage;
 
-    @Schema(description = "Error Date Time", example = "2023-01-01T00:00:00")
+    @Schema(description = "Error Date Time")
     @JsonProperty("ErrorDateTime")
     private LocalDateTime errorDateTime;
 
@@ -62,6 +62,4 @@ public class ErrorResponseDto {
     public void setErrorDateTime(LocalDateTime errorDateTime) {
         this.errorDateTime = errorDateTime;
     }
-
-
 }

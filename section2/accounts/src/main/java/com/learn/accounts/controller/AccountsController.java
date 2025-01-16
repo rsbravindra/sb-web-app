@@ -85,6 +85,15 @@ public class AccountsController {
                     responseCode = "500",
                     description = "HTTP Status 500 Update error",
                     content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
+            ),
+            @ApiResponse(
+                    responseCode = "417",
+                    description = "Expectation Failed"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
             )
     })
 
@@ -103,13 +112,24 @@ public class AccountsController {
     }
 
     @Operation(
-            summary = "Delete newly created account REST Api",
-            description = "Endpoint to delete a newly created account"
+        summary = "Delete newly created account REST Api",
+        description = "Endpoint to delete a newly created account"
     )
-    @ApiResponse(
+    @ApiResponses({
+        @ApiResponse(
             responseCode = "204",
             description = "HTTP Status 204 No Content"
-    )
+        ),
+        @ApiResponse(
+            responseCode = "417",
+            description = "Expectation Failed"
+        ),
+        @ApiResponse(
+            responseCode = "500",
+            description = "HTTP Status Internal Server Error",
+            content = @Content(schema = @Schema(implementation = ErrorResponseDto.class))
+        )
+    })
     @DeleteMapping(value = "/delete")
     public ResponseEntity<ResponseDto> deleteAccount(@RequestParam @Pattern(regexp = "[0-9]{10}", message = "mobile number should be 10 digits") String mobileNumber) {
         boolean isDeleted = accountService.deleteAccount(mobileNumber);
@@ -119,7 +139,7 @@ public class AccountsController {
                     .body(new ResponseDto(AccountConstants.STATUS_204, AccountConstants.MESSAGE_204));
         } else {
             return ResponseEntity
-                    .status(HttpStatus.BAD_REQUEST)
+                    .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(AccountConstants.STATUS_500, AccountConstants.MESSAGE_500));
         }
     }
