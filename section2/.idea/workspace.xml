@@ -33,29 +33,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccountsApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.accounts [build].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [clean,build].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [verify].executor&quot;: &quot;Run&quot;,
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ces/Documents/ALL-DOCS/PROJECT-PRACTICE/microservices/section2&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.19757085&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccountsApplication.executor": "Run",
+    "Maven.accounts [build].executor": "Run",
+    "Maven.accounts [clean,build].executor": "Run",
+    "Maven.accounts [clean,install].executor": "Run",
+    "Maven.accounts [clean].executor": "Run",
+    "Maven.accounts [compile].executor": "Run",
+    "Maven.accounts [install].executor": "Run",
+    "Maven.accounts [verify].executor": "Run",
+    "OverrideImplement.generate.javadoc": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ces/Documents/ALL-DOCS/PROJECT-PRACTICE/microservices/section2",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.splitter.proportion": "0.19757085"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn compile" />
@@ -110,7 +110,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/accounts/src/main/java/com/learn/accounts/service/impl/AccountsServiceImpl.java</url>
-          <line>72</line>
+          <line>68</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -120,7 +120,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/accounts/src/main/java/com/learn/accounts/service/impl/AccountsServiceImpl.java</url>
-          <line>120</line>
+          <line>111</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
